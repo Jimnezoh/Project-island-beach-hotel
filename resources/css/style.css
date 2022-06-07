@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background color: white;
+    color: black;
+    font family: 'lato', 'arial', sans-serif;
+    font weight: 300;
+    font size: 20px;
+    text-rendering: optimizelegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*-------------------HEADER--------------*/
+
+header {
+    background-image: linear-gradient(rgba(13, 48, 112, 0.342), rgba(13, 48, 112, 0.342)), url(img/download\ \(14\).jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.beach {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+    word spacing: 3px letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 30px;
+    border-radius: 200px;
+    color: white;
+    background-color: orange;
+    margin-top: 2%;
+}
+
+.btn:link,
+.btn:visited {
+    background-color: orange;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(223, 191, 10, 0.685);
+    transition: background color 0.2s, color 0.2s;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 50px;
+    font-weight: 300;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgba(223, 191, 10, 0.685);
+}
+
+
+/*---------------------SECTION FEATURES----------------------*/
+
+section {
+    padding: 80px;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 180%;
+}
+
+h2:after {
+    display: block;
+    content: " ";
+    background-color: orange;
+    height: 2px;
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.long-copy {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+    font-size: 110%;
+}
+
+.box {
+    padding: 1%;
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 120%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.box p {
+    line-height: 145%;
+}
+
+
+/*-----------------------ICONS-------------------------*/
+
+.icon-big {
+    color: orange;
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/*---------------------------SECTION PHOTOS------------------------*/
+
+.section-photos {
+    padding: 0%;
+}
+
+.meals {
+    list-style: none;
+    width: 100%;
+}
+
+.meals li {
+    width: 33.33%;
+    float: left;
+    display: block;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.accomodation {
+    list-style: none;
+    width: 100%;
+}
+
+.accomodation li {
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.accomodation-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.accomodation-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.sandy-beaches {
+    list-style: none;
+    width: 100%;
+}
+
+.sandy-beaches li {
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.sandy-beaches-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.sandy-beaches-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.meal-photo,
+.accomodation-photo,
+.sandy-beaches-photo {
+    background-color: black;
+    overflow: hidden;
+}
+
+.meal-photo img,
+.accomodation-photo img,
+.sandy-beaches-photo img {
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s opacity 0.5s;
+}
+
+.meal-photo img:hover,
+.accomodation-photo img:hover,
+.sandy-beaches-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/*---------------------------SECTION-STEPS------------------------------*/
+
+.steps {
+    margin-top: 30px;
+}
+
+.steps:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps:last-child {
+    padding-left: 3%;
+}
+
+.phone-app {
+    width: 75%;
+}
+
+.work-steps {
+    margin-bottom: 11px;
+}
+
+.work-steps div {
+    color: orange;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 190%;
+    display: inline-block;
+    margin-right: 25px;
+    border: 2px solid;
+    border-radius: 50%;
+}
